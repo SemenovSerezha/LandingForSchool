@@ -1,0 +1,38 @@
+// _______________constants
+
+$black: #2f2e33;
+$grey: #d5d6d2;
+$white: #fff;
+$blue: #3a5199;
+
+// _______________constants
+
+// _______________main
+
+*,
+*:before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	color: $grey;
+	font-size: 2vh;
+}
+
+/* Основные стили */
+
