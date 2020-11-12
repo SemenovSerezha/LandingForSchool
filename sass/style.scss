@@ -1,3 +1,8 @@
+@import "_header";
+@import "_content";
+@import "_footer";
+@import "_footer";
+
 // _______________constants
 
 $black: #2f2e33;
@@ -30,9 +35,11 @@ html,
 body {
 	height: 100%;
 	font-family: Arial, Helvetica, sans-serif;
-	color: $grey;
+	color: $black;
 	font-size: 2vh;
 }
 
-/* Основные стили */
-
+.wrapper{
+	display: flex;
+	flex-direction: column;
+}

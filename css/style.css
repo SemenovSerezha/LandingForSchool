@@ -1,4 +1,31 @@
-@charset "UTF-8";
+.header {
+  height: 20vh;
+  background-color: aqua;
+}
+
+.header__block {
+  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header__logo img {
+  max-width: 100px;
+}
+
+.soc-icons img {
+  max-width: 70px;
+}
+
+.soc-icons img {
+  max-width: 70px;
+}
+
 *,
 *:before,
 *::after {
@@ -21,8 +48,16 @@ html,
 body {
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  color: #d5d6d2;
+  color: #2f2e33;
   font-size: 2vh;
 }
 
-/* Основные стили */
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
