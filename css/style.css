@@ -1,21 +1,55 @@
 .header {
-  height: 20vh;
   background-color: aqua;
+  min-width: 700px;
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 50;
 }
 
 .header__block {
-  max-width: 600px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  max-height: 20vh;
+  padding: 10px 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 2fr;
+      grid-template-columns: 1fr 1fr 2fr;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+}
+
+.header__address, .header__logo, .header__burger {
+  margin: 5px;
+}
+
+.header__logo {
+  text-align: center;
 }
 
 .header__logo img {
-  max-width: 100px;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.header__menu {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+.header__logo, .header__burger, .header__address {
+  background-color: blueviolet;
+}
+
+.header__menu-item {
+  background-color: cadetblue;
+  text-align: center;
 }
 
 .soc-icons img {
@@ -49,7 +83,7 @@ body {
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
   color: #2f2e33;
-  font-size: 2vh;
+  font-size: 1em;
 }
 
 .wrapper {
